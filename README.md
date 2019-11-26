@@ -20,8 +20,22 @@ Ik wil zoiets gaan maken. De kleuren worden de continenten (zonder Indonesië) e
 ## Installatie
 De template die ik heb gebruikt komt van dit filmpje af: https://www.youtube.com/watch?v=NlBt-7PuaLk&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&index=7 Mocht je de basis code willen schrijven dan moet je het filmpje bekijken. Helaas is hier geen code meer van wat je kan kopiëren. 
 
+Als je mijn code wilt gebruiken kan je mijn code forken en/of downloaden in Github. Het is belangrijk dat je de bundle.js mee neemt in je fork of download. Ik heb mijn code geschreven in vizhub en hier word gebruik gemaakt van de bundle.js. Het is een javascript bestandje die de code die je in de andere .js bestanden schrijft update en vertaald zodat je de visualisaties te zien krijgt in de browser. 
+
+Om gebruik te maken van d3 is het belangrijk dat je in je head in html deze regel zet. Dit zorgt ervoor dat d3 gedownload word. 
+```html
+<script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+```
+Vervolgens moet je in je javascript index ook vertellen welke onderdelen van d3 je wilt gebruiken. Dat doe je met deze regel. Als je dingen niet gebruik of als je iets wilt toevoegen kan je de lijst aanpassen. 
 ```javascript
-console.log("hoi")
+import { select, 
+    scaleLinear, 
+    max, 
+    scaleBand,
+    axisLeft,
+    axisBottom,
+  	json,
+   } from 'd3';
 ```
 
  
