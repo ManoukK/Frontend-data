@@ -20,7 +20,7 @@ Ik wil zoiets gaan maken. De kleuren worden de continenten (zonder Indonesië) e
 ## Installatie
 De template die ik heb gebruikt komt van dit filmpje af: https://www.youtube.com/watch?v=NlBt-7PuaLk&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&index=7 Mocht je de basis code willen schrijven dan moet je het filmpje bekijken. Helaas is hier geen code meer van wat je kan kopiëren. 
 
-```javascipt
+```javascript
 console.log("hoi")
 ```
 
