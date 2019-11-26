@@ -79,6 +79,8 @@ https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-13/sp
 De data die ik binnen kreeg was een array met values erin die ik uiteindelijk naar voren wil halen, deze zitten nogal verstopt. Ik heb de array een klein beetje opgeschoont maar het is meer netter maken dan opschonen. Zo zag de array er eerst uit:
 ![Schermafbeelding 2019-11-26 om 10 50 21](https://user-images.githubusercontent.com/45541885/69618756-b3dd6500-103a-11ea-9d8e-7f4f9f807abc.png)
 
+Dit is de code waar ik mijn data ophaal, fetch, omzet naar json en netter maak. Dankzij de return die ik gebruik bij continent, category en objectCount krijg ik de array terug die je hieronder kan zien. De objectCount heeft een nummer waarde alleen ziet het nog als een string. Door er Number voor te zetten returnt het nummers in plaats van strings. 
+
 ```javascript
 function runQuery(url, query) {
     return fetch(url + "?query=" + encodeURIComponent(query) + "&format=json")
@@ -87,13 +89,13 @@ function runQuery(url, query) {
       	.then(results => {
       		console.log(results)
         	return results.map(result => {
-            return {
-							continent: result.continentLabel.value,
-							category: result.categoryLabel.value,
-							objectCount: Number(result.choCount.value)
-            }
-        })
-    })
+            	return {
+			continent: result.continentLabel.value,
+			category: result.categoryLabel.value,
+			objectCount: Number(result.choCount.value)
+            		}
+        	})
+    	})
         .catch(error => {
             console.log(error)
         })
@@ -104,6 +106,9 @@ runQuery(endpoint, myQuery)
 		barChart(results)
 	});
 ```
+
+Zo ziet de array eruit waar ik mee verder heb gewerkt. 
+![Schermafbeelding 2019-11-26 om 10 50 47](https://user-images.githubusercontent.com/45541885/69619368-c015f200-103b-11ea-88c3-acbadd244ee8.png)
 
 
  
