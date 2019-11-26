@@ -76,6 +76,34 @@ De endpoint die ik heb gebruikt ziet er zo uit:
 ```
 https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-13/sparql
 ```
+De data die ik binnen kreeg was een array met values erin die ik uiteindelijk naar voren wil halen, deze zitten nogal verstopt. Ik heb de array een klein beetje opgeschoont maar het is meer netter maken dan opschonen. Zo zag de array er eerst uit:
+![Schermafbeelding 2019-11-26 om 10 50 21](https://user-images.githubusercontent.com/45541885/69618756-b3dd6500-103a-11ea-9d8e-7f4f9f807abc.png)
+
+```javascript
+function runQuery(url, query) {
+    return fetch(url + "?query=" + encodeURIComponent(query) + "&format=json")
+        .then(res => res.json())
+        .then(data => data.results.bindings)
+      	.then(results => {
+      		console.log(results)
+        	return results.map(result => {
+            return {
+							continent: result.continentLabel.value,
+							category: result.categoryLabel.value,
+							objectCount: Number(result.choCount.value)
+            }
+        })
+    })
+        .catch(error => {
+            console.log(error)
+        })
+};
+
+runQuery(endpoint, myQuery)
+	.then(results => {
+		barChart(results)
+	});
+```
 
 
  
