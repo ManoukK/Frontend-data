@@ -130,6 +130,11 @@ Dit heb ik als eerste gemaakt aan de hand van het filmpje van Curran: https://ww
 Uiteindelijk heb ik dit ervan gemaakt: 
 ![Schermafbeelding 2019-11-26 om 11 26 18](https://user-images.githubusercontent.com/45541885/69621607-b8584c80-103f-11ea-99bc-f2aa40c443b0.png)
 
-
+## Bronnenlijst 
+- basis code: https://www.youtube.com/watch?v=NlBt-7PuaLk&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&index=7
+- Legenda: https://www.d3-graph-gallery.com/graph/custom_legend.html
+- Update pattern basis: Laurens Aarnoudse
+- Kleuren toevoegen: https://vizhub.com/Razpudding/b42c2072180348658542212b91614b82
+- Labels laten draaien: https://bl.ocks.org/mbostock/4403522
 
  
