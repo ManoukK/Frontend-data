@@ -77,6 +77,7 @@ De endpoint die ik heb gebruikt ziet er zo uit:
 https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-13/sparql
 ```
 De data die ik binnen kreeg was een array met values erin die ik uiteindelijk naar voren wil halen, deze zitten nogal verstopt. Ik heb de array een klein beetje opgeschoont maar het is meer netter maken dan opschonen. Zo zag de array er eerst uit:
+
 ![Schermafbeelding 2019-11-26 om 10 50 21](https://user-images.githubusercontent.com/45541885/69618756-b3dd6500-103a-11ea-9d8e-7f4f9f807abc.png)
 
 Dit is de code waar ik mijn data ophaal, fetch, omzet naar json en netter maak. Dankzij de return die ik gebruik bij continent, category en objectCount krijg ik de array terug die je hieronder kan zien. De objectCount heeft een nummer waarde alleen ziet het nog als een string. Door er Number voor te zetten returnt het nummers in plaats van strings. 
@@ -108,7 +109,27 @@ runQuery(endpoint, myQuery)
 ```
 
 Zo ziet de array eruit waar ik mee verder heb gewerkt. 
+
 ![Schermafbeelding 2019-11-26 om 10 50 47](https://user-images.githubusercontent.com/45541885/69619368-c015f200-103b-11ea-88c3-acbadd244ee8.png)
+
+#### Lege data
+In mijn visualisatie heb ik eigenlijk geen "lege" data maar wel data die erg minimaal zijn. Een goed voorbeeld is Eurazië, die zie je bijna niet in mijn grafiek tenzij je erop gaat filteren. Toch wilde ik dit er wel in houden omdat het wel veel zegt over de collectie. Het mooie is dat als mensen dit niet willen zien hebben zij zelf de keuze om het eruit te filteren. 
+
+## Features
+- [ ] Een grouped bar chart in d3
+- [ ] Filteren op continent
+- [ ] Y as die mee beweegt op de filter 
+- [ ] Pop-up met aantal objecten in een bar
+
+## Proces
+Mijn proces naar het eind resultaat heb ik duidelijk beschreven in mijn wiki. Dit kan je hier lezen: https://github.com/ManoukK/Frontend-data/wiki/Visualisatie-maken-in-D3-(proces) Ik wilde toch even kort laten zien waar ik ben begonnen en wat het uiteindelijk is geworden. Ik heb ook gebruik gemaakt van een update pattern. Deze heb ik even los in een andere wiki beschreven dan bij het proces. Als je daar meer over wilt lezen kan je dat hier doen: https://github.com/ManoukK/Frontend-data/wiki/Enter,-exit,-update-in-D3
+
+Dit heb ik als eerste gemaakt aan de hand van het filmpje van Curran: https://www.youtube.com/watch?v=NlBt-7PuaLk&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&index=7
+![Schermafbeelding 2019-11-22 om 14 01 31](https://user-images.githubusercontent.com/45541885/69430245-6b216580-0d35-11ea-8f9b-a6eb6b7c2a39.png)
+
+Uiteindelijk heb ik dit ervan gemaakt: 
+![Schermafbeelding 2019-11-26 om 11 26 18](https://user-images.githubusercontent.com/45541885/69621607-b8584c80-103f-11ea-99bc-f2aa40c443b0.png)
+
 
 
  
