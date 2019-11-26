@@ -38,4 +38,44 @@ import { select,
    } from 'd3';
 ```
 
+## Data 
+Ik heb gebruik gemaakt van de collectie van wereld culturen. De collectie heeft een ontzettend grootte database. De data kan je ophalen aan de hand van een sparql. Dankzij Ivo is dat mij gelukt. Ik haal alle object en foto's op uit de dataset die een continent en een categorie hebben toe gewezen. Dankzij deze regel word Indonesië in de sparql er al uit gefilterd. Ik heb hier bewust voor gekozen omdat ik juist de collectie wil tonen zonder Indonesië
+
+```sparql
+FILTER(?countryCode != "ID")
+```
+
+Dit is de sparql die ik heb gebruikt. De prefixes zijn nodig om benodigde data op te halen, om errors te voorkomen en om dingen te definiëren.
+```sparql
+`PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX dc: <http://purl.org/dc/elements/1.1/>
+	PREFIX dct: <http://purl.org/dc/terms/>
+	PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+	PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+	PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+	PREFIX gn: <http://www.geonames.org/ontology#>
+
+  SELECT ?continentLabel ?categoryLabel (COUNT(?cho) AS ?choCount) 
+    WHERE {
+         <https://hdl.handle.net/20.500.11840/termmaster2802> skos:narrower ?category .
+         ?category skos:prefLabel ?categoryLabel .
+         ?category skos:narrower* ?subcategory .
+
+          ?cho edm:isRelatedTo ?subcategory .
+          ?cho dct:spatial ?place .
+          ?place skos:exactMatch/gn:countryCode ?countryCode  .
+          FILTER(?countryCode != "ID")
+
+          <https://hdl.handle.net/20.500.11840/termmaster2> skos:narrower ?continent .
+           ?continent skos:prefLabel ?continentLabel .
+           ?continent skos:narrower* ?place .
+    } GROUP BY ?continentLabel ?categoryLabel
+    ORDER BY DESC(?choCount)`
+```
+De endpoint die ik heb gebruikt ziet er zo uit: 
+```
+https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-13/sparql
+```
+
+
  
