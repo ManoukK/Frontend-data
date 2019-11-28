@@ -125,7 +125,7 @@ In mijn visualisatie heb ik eigenlijk geen "lege" data maar wel data die erg min
 - [ ] Een grouped bar chart in d3
 - [x] Filteren op continent
 - [ ] Y as die mee beweegt op de filter 
-- [ ] Pop-up met aantal objecten in een bar via tooltips
+- [x] Pop-up met aantal objecten in een bar via tooltips
 
 ## Proces
 Mijn proces naar het eind resultaat heb ik duidelijk beschreven in mijn wiki. Dit kan je hier lezen: [wiki, visualisatie maken in d3 (proces)](https://github.com/ManoukK/Frontend-data/wiki/Visualisatie-maken-in-D3-(proces)) Ik wilde toch even kort laten zien waar ik ben begonnen en wat het uiteindelijk is geworden. Ik heb ook gebruik gemaakt van een update pattern. Deze heb ik even los in een andere wiki beschreven dan bij het proces. Als je daar meer over wilt lezen kan je dat hier doen: [wiki, enter exit en update in d3](https://github.com/ManoukK/Frontend-data/wiki/Enter,-exit,-update-in-D3)
@@ -154,3 +154,4 @@ Uiteindelijk heb ik dit ervan gemaakt:
 - Robert en Kris die met mij mee dachten voor mijn update pattern, ookal was het helaas niet gelukt. 
 - Kim voor het idee om van de checkboxes radio buttons te maken als mijn update pattern idee niet zou werken. 
 - Joan die hetzelfde update pattern probleem had als mij en met mij veel ging brainstormen hoe we het konden oplossen.
+- Wiebe van hem heb ik de link naar een goede tooltip gekregen.
