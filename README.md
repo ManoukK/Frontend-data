@@ -153,3 +153,4 @@ Uiteindelijk heb ik dit ervan gemaakt:
 - Ivo die mij heeft geholpen bij het schrijven van een sparql.
 - Robert en Kris die met mij mee dachten voor mijn update pattern, ookal was het helaas niet gelukt. 
 - Kim voor het idee om van de checkboxes radio buttons te maken als mijn update pattern idee niet zou werken. 
+- Joan die hetzelfde update pattern probleem had als mij en met mij veel ging brainstormen hoe we het konden oplossen.
