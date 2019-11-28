@@ -8,6 +8,9 @@ De opdracht is om een visualisatie in d3 te maken en daarbij interactie toe te p
 - Interactie toevoegen door een update pattern te schrijven
 - Goede data visualisatie maken die iedereen kan begrijpen, ook zonder uitleg
 
+Wil je mijn enter, update, exit pattern lezen, dan kan je dat hier in mijn wiki doen. Ik leg hier ook uit wat enter, update en exit is. 
+https://github.com/ManoukK/Frontend-data/wiki/Enter,-exit,-update-in-D3
+
 ## Concept
 Mijn doelgroep voor mijn concept zijn de medewerkers van het tropen museum. Vooral de mensen die tentoonstellingen maken, over de collectie gaan ect. Met mijn concept wil ik laten zien hoe de collectie is zonder Indonesië. De collectie is ontstaan uit dit land en er zijn ontzettend veel objecten en foto's die daar vandaan komen. De mensen die over de collectie gaan hebben al een goed beeld van Indonesië. Nu wil ik laten zien hoe de collectie zonder Indonesië is. Op deze manier hoop ik het perspectief te veranderen van de medewerkers en dat ze op een andere manier naar de collectie kijken en op nieuwe inzichten komen. 
 
@@ -17,7 +20,7 @@ Bron: https://docs.mongodb.com/charts/master/chart-type-reference/column-bar-cha
 
 Ik wil zoiets gaan maken. De kleuren worden de continenten (zonder Indonesië) en de groepen waar de bars in staan worden de categoriën. Als interactie wil ik dat je de continenten aan en uit kan zetten zodat je het een van het ander kan vergelijken. 
 
-#### Mijn eindresultaat
+#### Mijn eindresultaat op donderdag 28/11/19 13:00
 ![Schermafbeelding 2019-11-28 om 12 19 44](https://user-images.githubusercontent.com/45541885/69802260-7a8f2b80-11d9-11ea-91c2-f2ff72ece060.png)
 
 ## Installatie
@@ -120,9 +123,9 @@ In mijn visualisatie heb ik eigenlijk geen "lege" data maar wel data die erg min
 
 ## Features
 - [ ] Een grouped bar chart in d3
-- [ ] Filteren op continent
+- [x] Filteren op continent
 - [ ] Y as die mee beweegt op de filter 
-- [ ] Pop-up met aantal objecten in een bar
+- [ ] Pop-up met aantal objecten in een bar via tooltips
 
 ## Proces
 Mijn proces naar het eind resultaat heb ik duidelijk beschreven in mijn wiki. Dit kan je hier lezen: [wiki, visualisatie maken in d3 (proces)](https://github.com/ManoukK/Frontend-data/wiki/Visualisatie-maken-in-D3-(proces)) Ik wilde toch even kort laten zien waar ik ben begonnen en wat het uiteindelijk is geworden. Ik heb ook gebruik gemaakt van een update pattern. Deze heb ik even los in een andere wiki beschreven dan bij het proces. Als je daar meer over wilt lezen kan je dat hier doen: [wiki, enter exit en update in d3](https://github.com/ManoukK/Frontend-data/wiki/Enter,-exit,-update-in-D3)
@@ -140,4 +143,13 @@ Uiteindelijk heb ik dit ervan gemaakt:
 - Kleuren toevoegen: https://vizhub.com/Razpudding/b42c2072180348658542212b91614b82
 - Labels laten draaien: https://bl.ocks.org/mbostock/4403522
 
- 
+## Credits voor:
+#### non-code:
+- Kim die mij wat kleine handige tips gaf tijdens het bedenken van mijn concept. 
+- Laurens die mij vertelde dat het juist misschien interessant is om Indonesië eruit te laten.
+
+#### code:
+- Laurens die de basis voor mijn update pattern heeft geschreven. 
+- Ivo die mij heeft geholpen bij het schrijven van een sparql.
+- Robert en Kris die met mij mee dachten voor mijn update pattern, ookal was het helaas niet gelukt. 
+- Kim voor het idee om van de checkboxes radio buttons te maken als mijn update pattern idee niet zou werken. 
