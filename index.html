@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pie chart</title>
-</head>
-<body>
-    <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="script.js"></script>
+<html>
+  <head>
+    
+    <title>test Een collectie zonder Indonesië</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+  
+  </head>
+  
+  <body>
+    
+    <h1>De collectie zonder Indonesië</h1>
+    <p>Hier zie je de collectie van wereldculturen zonder Indonesië. 
+      Elke kleur staat voor een ander continent. 
+      De hoogte van elke kleur verteld hoeveel objecten uit dat continent komen. </p>
+    
+   <form>
+  		<input type="radio" id="continent1" class="Amerika" name="continent" value="Amerika"> 
+     	<label for="continent1">Amerika</label>
+     
+  		<input type="radio" id="continent2" class="Azië" name="continent" value="Azië"> 
+     	<label for="continent2">Azië</label>
+     
+  		<input type="radio" id="continent3" class="Afrika" name="continent" value="Afrika">
+      <label for="continent3">Afrika</label>
+     
+      <input type="radio" id="continent4" class="Oceanië" name="continent" value="Oceanië">
+      <label for="continent4">Oceanië</label>
+     
+      <input type="radio" id="continent5" class="Eurazië" name="continent" value="Eurazië">
+      <label for="continent5">Eurazië</label>
+    </form>
 
-    <div id="piechartViz">
+    <svg width="960" height="500"></svg>
+    <script src="bundle.js"></script>
 
-    </div>
-
-</body>
-</html>
+    
+  </b
