@@ -21,7 +21,7 @@ Bron: https://docs.mongodb.com/charts/master/chart-type-reference/column-bar-cha
 Ik wil zoiets gaan maken. De kleuren worden de continenten (zonder Indonesië) en de groepen waar de bars in staan worden de categoriën. Als interactie wil ik dat je de continenten aan en uit kan zetten zodat je het een van het ander kan vergelijken. 
 
 #### Mijn eindresultaat op donderdag 28/11/19 13:00
-![Schermafbeelding 2019-11-28 om 12 19 44](https://user-images.githubusercontent.com/45541885/69802260-7a8f2b80-11d9-11ea-91c2-f2ff72ece060.png)
+[![Schermafbeelding 2019-11-28 om 12 19 44](https://user-images.githubusercontent.com/45541885/69802260-7a8f2b80-11d9-11ea-91c2-f2ff72ece060.png)](https://vizhub.com/ManoukK/c5757c39fd744066aa64668b02a92785?mode=full)
 
 ## Installatie
 De template die ik heb gebruikt komt van dit filmpje af: https://www.youtube.com/watch?v=NlBt-7PuaLk&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&index=7 Mocht je de basis code willen schrijven dan moet je het filmpje bekijken. Helaas is hier geen code meer van wat je kan kopiëren. 
